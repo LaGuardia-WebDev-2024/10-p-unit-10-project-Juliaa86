@@ -19,7 +19,7 @@ var sunTotal = 500;
 
 setup = function() {
    size(600, 450); 
-
+    frameRate(3)
    reset();
 }
 
@@ -56,15 +56,16 @@ var display = function(){
   textSize(20);
 
   for(var i = 0; i < heartXPos.length; i ++){
-    text(heart, heartXPos[i], heartYPos[i]);
+    text(heart, heartXPos[i] + random(-100,100), heartYPos[i] + random(-100,100));
   }
 
   for(var i = 0; i < starXPos.length; i ++){
-    text(star, starXPos[i], starYPos[i]);
+    text(star, starXPos[i] + random(-100,100), starYPos[i] + random(-100,100));
   }
   for(var i = 0; i < sunXPos.length; i ++){
-    text(sun,starXPos[i], sunYPos[i]);
+    text(sun,starXPos[i] + random(-100,100), sunYPos[i] + random(-100,100));
   }
+
 
   fill(0,0,0);
   rect(0,400,600,50);

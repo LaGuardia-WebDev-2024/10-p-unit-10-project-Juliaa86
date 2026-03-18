@@ -1,21 +1,21 @@
 //Stars
-var appleXPos = [];
-var appleYPos = [];
-var apple = "🍎";
-var appleTotal = 50;
+var alienXPos = [];
+var alienYPos = [];
+var alien = "👽";
+var alienTotal = 50;
 
 //Heart
-var strawberryXPos = [];
-var strawberryYPos = [];
-var strawberry = "🍓🍓🍓";
-var strawberryTotal = 3;
-var strawberryFound = 0;
+var avoXPos = [];
+var avoYPos = [];
+var avo = 🥑"";
+var avoTotal = 3;
+var avoFound = 0;
 
 //Sun
-var melonXPos = [];
-var melonYPos = [];
-var melon = "🍉";
-var melonTotal = 50;
+var frogXPos = [];
+var frogYPos = [];
+var frog = "🐸";
+var frogTotal = 50;
 
 setup = function() {
    size(600, 450); 
@@ -40,11 +40,11 @@ mouseClicked = function(){
 }
 
 var check = function(xClick, yClick){
-  for(var i = 0; i < strawberryXPos.length; i++){
-    if(dist(xClick - 5, yClick - 5, strawberryXPos[i], strawberryYPos[i])<15){
-      strawberryXPos.splice(i, 1);
-      strawberryYPos.splice(i, 1);
-      strawberryFound++;
+  for(var i = 0; i < avoXPos.length; i++){
+    if(dist(xClick - 5, yClick - 5, avoXPos[i], avoYPos[i])<15){
+      avoXPos.splice(i, 1);
+      avoYPos.splice(i, 1);
+      avoFound++;
     }
   }
 }
@@ -55,23 +55,23 @@ var display = function(){
   fill(200,200,0);
   textSize(20);
 
-  for(var i = 0; i < strawberryXPos.length; i ++){
-    text(strawberry, strawberryXPos[i], strawberryYPos[i]);
+  for(var i = 0; i < avoXPos.length; i ++){
+    text(avo, avoXPos[i], avoYPos[i]);
   }
 
-  for(var i = 0; i < appleXPos.length; i ++){
-    text(apple, appleXPos[i], appleYPos[i]);
+  for(var i = 0; i < alienXPos.length; i ++){
+    text(alien, alienXPos[i], alienYPos[i]);
   }
-  for(var i = 0; i < melonXPos.length; i ++){
-    text(melon,melonXPos[i], melonYPos[i]);
+  for(var i = 0; i < frogXPos.length; i ++){
+    text(frog,frogXPos[i], frogYPos[i]);
   }
 
   fill(0,0,0);
   rect(0,400,600,50);
   fill(255,255,255);
-  text("Find The " + strawberry + "s   |   " + strawberry + " " + strawberryFound + "/" + strawberryTotal, 0, 425);
+  text("Find The " + avo + "s   |   " + avo + " " + avoFound + "/" + avoTotal, 0, 425);
 
-  if(strawberryFound == strawberryTotal){
+  if(avoFound == avoTotal){
     fill(0, 200, 200);
     textSize(50);
     text("Press 'r' to restart \nthe game", 50, 200);
@@ -79,7 +79,7 @@ var display = function(){
 }
 
 var reset = function(){
-  appleXPos = [];
+  alienXPos = [];
   appleYPos = [];
   strawberryXPos = [];
   strawberryYPos = [];
