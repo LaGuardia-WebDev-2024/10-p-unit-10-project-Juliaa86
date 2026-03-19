@@ -8,7 +8,7 @@ var starTotal = 500;
 var heartXPos = [];
 var heartYPos = [];
 var heart = "💛";
-var heartTotal = 3;
+var heartTotal = 5;
 var heartFound = 0;
 
 //Sun
@@ -50,7 +50,7 @@ var check = function(xClick, yClick){
 }
 
 var display = function(){
-  background(100,100,100);
+  background(100,100,100,0);
 
   fill(200,200,0);
   textSize(20);

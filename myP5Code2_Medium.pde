@@ -2,12 +2,12 @@
 var alienXPos = [];
 var alienYPos = [];
 var alien = "👽";
-var alienTotal = 50;
+var alienTotal = 150;
 
 //Heart
 var avoXPos = [];
 var avoYPos = [];
-var avo = 🥑"";
+var avo = "🥑";
 var avoTotal = 3;
 var avoFound = 0;
 
@@ -15,7 +15,7 @@ var avoFound = 0;
 var frogXPos = [];
 var frogYPos = [];
 var frog = "🐸";
-var frogTotal = 50;
+var frogTotal = 150;
 
 setup = function() {
    size(600, 450); 
@@ -50,7 +50,7 @@ var check = function(xClick, yClick){
 }
 
 var display = function(){
-  background(100,100,100);
+  background(100,100,100,0);
 
   fill(200,200,0);
   textSize(20);
@@ -80,25 +80,25 @@ var display = function(){
 
 var reset = function(){
   alienXPos = [];
-  appleYPos = [];
-  strawberryXPos = [];
-  strawberryYPos = [];
-  strawberryFound = 0;
-  melonXPos = [];
-  melonYPos = [];
+  alienYPos = [];
+  avoXPos = [];
+  avoYPos = [];
+  avoFound = 0;
+  frogXPos = [];
+  frogYPos = [];
 
 
-  for(var i = 0; i < appleTotal; i++){
-    appleXPos.push(random(0,600));
-    appleYPos.push(random(0,400));
+  for(var i = 0; i < alienTotal; i++){
+    alienXPos.push(random(0,600));
+    alienYPos.push(random(0,400));
   }
 
-  for(var i = 0; i < strawberryTotal; i++){
-    strawberryXPos.push(random(0,600));
-    strawberryYPos.push(random(0,400));
+  for(var i = 0; i < avoTotal; i++){
+    avoXPos.push(random(0,600));
+    avoYPos.push(random(0,400));
   }
-  for(var i = 0; i < melonTotal; i++){
-    melonXPos.push(random(0,600));
-    melonYPos.push(random(0,600));
+  for(var i = 0; i < frogTotal; i++){
+    frogXPos.push(random(0,600));
+    frogYPos.push(random(0,600));
   }
 }
