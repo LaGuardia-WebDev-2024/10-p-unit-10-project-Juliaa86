@@ -101,4 +101,5 @@ var reset = function(){
     melonXPos.push(random(0,600));
     melonYPos.push(random(0,600));
   }
+ 
 }

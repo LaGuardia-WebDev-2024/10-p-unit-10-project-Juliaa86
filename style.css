@@ -30,11 +30,19 @@ html{
   background-position: center;
   background-repeat: no-repeat;
 }
+#myCanvas3 {
+  border: 1px solid black;
+  border-radius: 30px;
+   background-image: url("https://wallpapercave.com/wp/wp6669294.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 #myCanvas4 {
   border: 1px solid black;
   background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230416/pngtree-game-sunset-yellow-image_2409244.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; }
 
 

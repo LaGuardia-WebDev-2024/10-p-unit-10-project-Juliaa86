@@ -101,4 +101,5 @@ var reset = function(){
     frogXPos.push(random(0,600));
     frogYPos.push(random(0,600));
   }
+  
 }

@@ -41,7 +41,7 @@ mouseClicked = function(){
 
 var check = function(xClick, yClick){
   for(var i = 0; i < dolphineXPos.length; i++){
-    if(dist(xClick - 5, yClick - 5, dolphineyXPos[i], dolphineYPos[i])<15){
+    if(dist(xClick - 5, yClick - 5, dolphineXPos[i], dolphineYPos[i])<15){
       dolphineXPos.splice(i, 1);
       dolphineYPos.splice(i, 1);
       dolphineFound++;
@@ -101,4 +101,6 @@ var reset = function(){
     waveXPos.push(random(0,600));
     waveYPos.push(random(0,600));
   }
+  
+
 }

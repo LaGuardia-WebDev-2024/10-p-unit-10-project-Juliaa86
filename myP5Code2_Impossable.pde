@@ -100,4 +100,5 @@ var reset = function(){
     sunXPos.push(random(0,600));
     sunYPos.push(random(0,600));
   }
+
 }
